@@ -73,7 +73,7 @@ const Button = ({
         <NavLink
           to={href}
           className={classNames.join(" ")}
-          style={style}
+          style={({ isActive }) => (isActive ? { color: "#3252DF" } : {})}
           onClick={onClick}
         >
           {children}

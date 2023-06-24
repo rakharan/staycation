@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .brand-text-icon {
+        @apply text-[26px] font-medium font-Poppins text-primary
+    }
+}
