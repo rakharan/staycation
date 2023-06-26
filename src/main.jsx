@@ -4,11 +4,22 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage.jsx";
-
+import Stories from "./pages/Stories.jsx";
+import Agents from "./pages/Agents.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />,
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: "agents",
+        element: <Agents />,
+      },
+    ],
   },
 ]);
 

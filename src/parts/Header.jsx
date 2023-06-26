@@ -6,7 +6,7 @@ const Header = (props) => {
     return props.pathname === path ? "active" : "";
   };
   return (
-    <header className=" border-b-[1px] w-full relative font-Poppins text-base">
+    <header className=" border-b-[1px] w-full relative font-Poppins text-base mb-[70px]">
       <div className="navbar-container">
         <nav className="navbar bg-white border-gray-200 h-20 flex justify-between">
           <div className="flex items-center justify-between w-full px-4 xl:px-[150px]">

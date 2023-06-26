@@ -14,10 +14,12 @@ const Button = ({
   isDisabled,
   isLoading,
   children,
+  isPrimary,
 }) => {
   const classNames = [className];
 
-  if (hasShadow) className.push("shadow-lg");
+  if (hasShadow) classNames.push("shadow-button");
+  if (isPrimary) classNames.push("bg-primary");
 
   const handleClick = () => {
     if (onClick) onclick();
@@ -96,6 +98,7 @@ Button.propTypes = {
   className: propTypes.string,
   href: propTypes.string,
   isDisabled: propTypes.bool,
+  isPrimary: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,

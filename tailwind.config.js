@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'button': '0 8px 15px 0 rgba(50, 82, 223, 0.3)'
+      },
+      backgroundColor: {
+        'primary': '#3252DF'
+      },
       colors: {
         'primary': '#3252DF',
         gray: {
