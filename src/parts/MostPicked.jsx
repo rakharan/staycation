@@ -3,14 +3,14 @@ import Button from "@/elements/button/Button";
 
 const MostPicked = (props) => {
   return (
-    <section className="px-4 xl:px-[150px] my-[70px]" ref={props.refMostPicked}>
+    <section className="my-[70px]" ref={props.refMostPicked}>
       <h4 className="mb-5 font-medium text-2xl text-gray-900">Most Picked</h4>
       <div className="grid grid-cols-3 grid-rows-2 h-[460px] gap-[30px] [&>*]:min-w-[361px]">
         {props.data.map((item, index) => {
           return (
             <div
               key={`mostpiked-${index}`}
-              className={`flex items-center justify-center rounded-[15px] ] ${
+              className={`flex items-center justify-center rounded-[15px] ${
                 index === 0 ? "row-span-2" : "row-span-1"
               }`}
             >
