@@ -19,7 +19,7 @@ const Hero = (props) => {
   }
 
   return (
-    <section className=" px-4 xl:px-[150px]">
+    <section className=" ">
       <div className="flex items-center justify-between">
         <div className="columns-auto pr-8 w-[422px]">
           <h1 className=" font-bold text-[42px] mb-4 text-gray-900">

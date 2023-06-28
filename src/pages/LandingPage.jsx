@@ -3,6 +3,7 @@ import Header from "@/parts/Header";
 import landingPage from "@/json/landingPage.json";
 import Hero from "@/parts/Hero";
 import MostPicked from "@/parts/MostPicked";
+import Category from "@/parts/Category";
 
 const LandingPage = () => {
   const refMostPicked = useRef(null);
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Header />
       <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
       <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
+      <Category data={landingPage.categories} />
     </>
   );
 };

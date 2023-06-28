@@ -7,3 +7,15 @@
         @apply text-[26px] font-medium font-Poppins text-primary
     }
 }
+
+section {
+    /* px-4 xl:px-[150px] */
+    padding: 0 16px 0 16px;
+}
+
+@media screen and (min-width: 1280px) {
+    section {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
