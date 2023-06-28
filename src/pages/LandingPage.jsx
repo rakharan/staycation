@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React, { useRef } from "react";
 import Header from "@/parts/Header";
 import landingPage from "@/json/landingPage.json";
 import Hero from "@/parts/Hero";
-export default class LandingPage extends Component {
-  render() {
-    return (
-      <>
-        <Header {...this.props}></Header>
-        <Hero data={landingPage.hero} />
-      </>
-    );
-  }
-}
+import MostPicked from "@/parts/MostPicked";
+
+const LandingPage = () => {
+  const refMostPicked = useRef(null);
+
+  return (
+    <>
+      <Header />
+      <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
+      <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
+    </>
+  );
+};
+
+export default LandingPage;

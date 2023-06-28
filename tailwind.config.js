@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-to-b': 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25))',
+      },
       boxShadow: {
         'button': '0 8px 15px 0 rgba(50, 82, 223, 0.3)'
       },
@@ -23,5 +26,6 @@ export default {
       'Poppins': ['Poppins', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+  ],
 }

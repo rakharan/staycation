@@ -34,7 +34,10 @@ const Hero = (props) => {
             className="px-8 text-white py-[10px] rounded-[4px] font-medium text-lg min-h-[50px] min-w-[210px]"
             isPrimary
             hasShadow
-            onClick={showMostPicked}
+            onClick={() => {
+              console.log("test");
+              showMostPicked();
+            }}
           >
             Show Me Now
           </Button>
