@@ -19,3 +19,18 @@ section {
         padding-right: 150px;
     }
 }
+
+
+.star {
+    mask: url(../src/assets/image/icons/star.svg) no-repeat center left;
+}
+
+.star:not(.star-placeholder) {
+    background-color: #FFCC47;
+    z-index: 2;
+}
+
+.star-placeholder {
+    z-index: 1;
+    background-color: gray;
+}
