@@ -1,6 +1,6 @@
 import React from "react";
 import Star from "@/elements/Star/Star";
-import TestimonyAccent from "@/assets/image/testimonial-frame.webp";
+import TestimonyAccent from "/image/testimonial-frame.webp";
 import Button from "@/elements/button/Button";
 
 const Testimony = ({ data }) => {

@@ -1,7 +1,7 @@
 import React from "react";
 
-import ImageHero from "@/assets/image/img-hero.webp";
-import ImageHeroFrame from "@/assets/image/img-hero-frame.webp";
+import ImageHero from "/image/img-hero.webp";
+import ImageHeroFrame from "/image/img-hero-frame.webp";
 import IconCities from "@/assets/image/icons/icon-cities.svg";
 import IconTraveller from "@/assets/image/icons/icon-traveller.svg";
 import IconTreasure from "@/assets/image/icons/icon-treasure.svg";
