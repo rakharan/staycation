@@ -32,7 +32,7 @@ const Category = ({ data }) => {
                     </figure>
                     <div className="meta-wrapper mt-4">
                       <Button
-                        className="stretced-link text-gray-800 cursor-pointer"
+                        className=" text-gray-800 cursor-pointer"
                         href={`/properties/${item._id}`}
                         type="link"
                       >

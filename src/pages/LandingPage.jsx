@@ -11,7 +11,6 @@ const LandingPage = () => {
 
   return (
     <>
-      <Header />
       <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
       <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
       <Category data={landingPage.categories} />
