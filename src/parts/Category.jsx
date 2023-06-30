@@ -1,10 +1,15 @@
 import Button from "@/elements/button/Button";
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Category = ({ data }) => {
   return data.map((category, index1) => {
     return (
-      <section className="mb-[70px]" key={`category-${index1}`}>
+      <section
+        className="mb-[70px] px-4 xl:px-[150px]"
+        key={`category-${index1}`}
+      >
         <h4 className="font-medium text-2xl text-gray-900 mb-[20px]">
           {category.name}
         </h4>
@@ -23,14 +28,15 @@ const Category = ({ data }) => {
                         Popular <span>Choice</span>
                       </div>
                     )}
-                    <figure className="img-wrapper h-[180px]">
-                      <img
-                        className="img-cover object-cover w-full h-full"
+                    <figure className="img-wrapper">
+                      <LazyLoadImage
                         src={item.imageUrl}
                         alt={item.name}
+                        effect="blur"
+                        delayTime={500}
                       />
                     </figure>
-                    <div className="meta-wrapper mt-4">
+                    <div className="meta-wrapper pl-[2px]">
                       <Button
                         className=" text-gray-800 cursor-pointer"
                         href={`/properties/${item._id}`}

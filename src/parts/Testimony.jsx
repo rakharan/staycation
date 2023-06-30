@@ -1,11 +1,11 @@
 import React from "react";
 import Star from "@/elements/Star/Star";
-import TestimonyAccent from "@/assets/image/testimonial-frame.jpg";
+import TestimonyAccent from "@/assets/image/testimonial-frame.webp";
 import Button from "@/elements/button/Button";
 
 const Testimony = ({ data }) => {
   return (
-    <section className="flex items-center gap-x-20">
+    <section className="flex items-center gap-x-20 px-4 xl:px-[150px]">
       <div className="">
         <div className="image-testimonnial w-[405px] h-[541px] relative flex items-center">
           <img

@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "@/elements/button/Button";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const MostPicked = (props) => {
   return (
-    <section className="my-[70px]" ref={props.refMostPicked}>
+    <section className="my-[70px] px-4 xl:px-[150px]" ref={props.refMostPicked}>
       <h4 className="mb-5 font-medium text-2xl text-gray-900">Most Picked</h4>
       <div className="grid grid-cols-3 grid-rows-2 h-[460px] gap-[30px] [&>*]:min-w-[361px]">
         {props.data.map((item, index) => {
@@ -20,7 +22,8 @@ const MostPicked = (props) => {
                 </div>
                 <div className="group-hover:scale-110 overflow-hidden transition-all ease-in-out duration-500">
                   <figure className="img-wrapper h-full">
-                    <img
+                    <LazyLoadImage
+                      effect="blur"
                       className="img-cover object-cover w-full h-full"
                       src={item.imageUrl}
                       alt={item.name}

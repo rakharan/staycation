@@ -1,7 +1,7 @@
 import React from "react";
 
-import ImageHero from "@/assets/image/img-hero.jpg";
-import ImageHeroFrame from "@/assets/image/img-hero-frame.jpg";
+import ImageHero from "@/assets/image/img-hero.webp";
+import ImageHeroFrame from "@/assets/image/img-hero-frame.webp";
 import IconCities from "@/assets/image/icons/icon-cities.svg";
 import IconTraveller from "@/assets/image/icons/icon-traveller.svg";
 import IconTreasure from "@/assets/image/icons/icon-treasure.svg";
@@ -19,7 +19,7 @@ const Hero = (props) => {
   }
 
   return (
-    <section className=" ">
+    <section className="px-4 xl:px-[150px]">
       <div className="flex items-center justify-between">
         <div className="columns-auto pr-8 w-[422px]">
           <h1 className=" font-bold text-[42px] mb-4 text-gray-900">
