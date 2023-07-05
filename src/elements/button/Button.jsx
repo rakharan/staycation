@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const Button = ({
   className,
@@ -91,20 +91,20 @@ const Button = ({
   );
 };
 
-Button.propTypes = {
-  type: propTypes.oneOf(["button", "link"]),
-  onClick: propTypes.func,
-  target: propTypes.string,
-  className: propTypes.string,
-  href: propTypes.string,
-  isDisabled: propTypes.bool,
-  isPrimary: propTypes.bool,
-  isLoading: propTypes.bool,
-  isSmall: propTypes.bool,
-  isLarge: propTypes.bool,
-  isBlock: propTypes.bool,
-  isExternal: propTypes.bool,
-  hasShadow: propTypes.bool,
+Button.PropTypes = {
+  type: PropTypes.oneOf(["button", "link"]),
+  onClick: PropTypes.func,
+  target: PropTypes.string,
+  className: PropTypes.string,
+  href: PropTypes.string,
+  isDisabled: PropTypes.bool,
+  isPrimary: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  isSmall: PropTypes.bool,
+  isLarge: PropTypes.bool,
+  isBlock: PropTypes.bool,
+  isExternal: PropTypes.bool,
+  hasShadow: PropTypes.bool,
 };
 
 export default Button;

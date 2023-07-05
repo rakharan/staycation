@@ -69,7 +69,7 @@ const Star = ({ className, value, height, width, spacing }) => {
 
 export default Star;
 
-Star.propTypes = {
+Star.PropTypes = {
   className: PropTypes.string,
   value: PropTypes.number,
   width: PropTypes.number,
