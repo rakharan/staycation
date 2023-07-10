@@ -11,10 +11,16 @@ const LandingPage = () => {
 
   return (
     <>
-      <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
-      <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
-      <Category data={landingPage.categories} />
-      <Testimony data={landingPage.testimonial}></Testimony>
+      <Header />
+      <div className="mt-20">
+        <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
+        <MostPicked
+          refMostPicked={refMostPicked}
+          data={landingPage.mostPicked}
+        />
+        <Category data={landingPage.categories} />
+        <Testimony data={landingPage.testimonial}></Testimony>
+      </div>
     </>
   );
 };

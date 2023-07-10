@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import PropTypes from "prop-types";
 import formatDate from "@/utils/formatDate";
-import iconCalendar from "@/assets/image/icons/icon_calendar.svg";
+import iconCalendar from "/image/icon/icon_calendar.svg";
 
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
@@ -50,7 +50,7 @@ const InputDate = (props) => {
       ref={refDate}
       className={["input-date mb-4", props.outerClassName].join(" ")}
     >
-      <div className="input-group bg-white">
+      <div className="input-group bg-white relative">
         <div className="input-group-prepend bg-gray-900">
           <span className="input-group-text pointer-events-none border-none cursor-pointer p-2 rounded-[4px] w-[45px] h-[45px] flex justify-center bg-gray-900 absolute z-50">
             <img src={iconCalendar} alt="icon calendar" />
@@ -83,7 +83,7 @@ const InputDate = (props) => {
 
 export default InputDate;
 
-InputDate.PropTypes = {
+InputDate.propTypes = {
   value: PropTypes.object,
   onChange: PropTypes.func,
   placehlder: PropTypes.string,

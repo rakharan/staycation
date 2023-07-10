@@ -5,8 +5,23 @@ const Header = (props) => {
   const getNavLinkclassName = (path) => {
     return props.pathname === path ? "active" : "";
   };
+
+  if (props.isCentered) {
+    return (
+      <header className="border-b-[1px]">
+        <div>
+          <nav className="navbar flex w-full justify-center bg-white border-gray-200 h-20">
+            <Button>
+              <BrandIcon />
+            </Button>
+          </nav>
+        </div>
+      </header>
+    );
+  }
+
   return (
-    <header className=" border-b-[1px] w-full relative font-Poppins text-base mb-[70px]">
+    <header className=" border-b-[1px] w-full relative font-Poppins text-base">
       <div className="navbar-container">
         <nav className="navbar bg-white border-gray-200 h-20 flex justify-between">
           <div className="flex items-center justify-between w-full px-4 xl:px-[150px]">

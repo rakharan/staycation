@@ -91,7 +91,7 @@ const Button = ({
   );
 };
 
-Button.PropTypes = {
+Button.propTypes = {
   type: PropTypes.oneOf(["button", "link"]),
   onClick: PropTypes.func,
   target: PropTypes.string,
